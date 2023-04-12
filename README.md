@@ -1,5 +1,5 @@
 # article-backend
-A article web-app.
+An article web-app.
 
 
 ## 🚧 Technology Stack
