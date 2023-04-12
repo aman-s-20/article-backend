@@ -9,25 +9,6 @@ const cors = require('cors');
 const bodyParser = require("body-parser");
 
 
-// const corsOpts = {
-//     origin: '*',
-  
-//     methods: [
-//       'GET',
-//       'POST',
-//       'PUT',
-//       'PATCH',
-//       'DELETE'
-//     ],
-  
-    
-//     allowedHeaders: [
-//       "Origin, X-Requested-With, Content-Type, Accept, Authorization"
-//     ],
-   
-//   };
-
-
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
