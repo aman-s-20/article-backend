@@ -36,15 +36,15 @@ $ node index.js
 ## 🔨 API Endpoints
 
 `/api`
-| REQUEST METHODS | ENDPOINTS | DESCRIPTION |
-| :-------------- | :-------: | ------------------: |
-| POST | /signup  | add new user to database        |
-| POST | /login   | User login                      |
-| GET  | /articles| add new article to database     |
+| REQUEST METHODS | ENDPOINTS | DESCRIPTION                 |
+| :-------------- | :-------: | ------------------:         |
+| POST            | /signup   | add new user to database    |
+| POST            | /login    | User login                  |
+| GET             | /articles | add new article to database |
 
 `/api/users/:userId`
-| REQUEST METHODS | ENDPOINTS | DESCRIPTION |
-| :-------------- | :-------: | ------------------: |
-| POST | /articles| add new article to database |
-| PUT  | /        | update name or age of user  |
+| REQUEST METHODS | ENDPOINTS | DESCRIPTION                 |
+| :-------------- | :-------: | ------------------:         |
+| POST            | /articles | add new article to database |
+| PUT             | /         | update name or age of user  |
 
