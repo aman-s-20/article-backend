@@ -10,11 +10,13 @@ const bodyParser = require("body-parser");
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use('/api',auth);
-app.use('/api',article);
-
+app.use('/api', auth);
+app.use('/api', article);
+app.use((req, res, next) => {
+    res.status(404).send("Sorry can't find that!")
+})
 app.listen(port, () => {
 
     connectDB();

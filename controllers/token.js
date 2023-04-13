@@ -6,9 +6,7 @@ dotenv.config();
 
 const authenticateToken = (request, response, next) => {
     const authHeader = request.headers['authorization'];
-    // console.log(authHeader)
     const token = authHeader && authHeader.split(' ')[1];
-    // console.log(token)
 
     if (token == null) {
         return response.status(401).json({ statusCode:401,msg: 'token is missing' });
